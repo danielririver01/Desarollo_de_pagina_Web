@@ -1,0 +1,100 @@
+/* Importa la fuente "Roboto" desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Estilos generales para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Establece la fuente predeterminada para toda la página */
+}
+
+/* Establece una imagen de fondo para el cuerpo del documento */
+body {
+  background-image: url(../IMG/control-01gamer.png);
+}
+
+/* Estilos para el formulario de registro */
+.form-register {
+  width: 400px; /* Ancho del formulario */
+  background-color: rgb(24, 22, 22); /* Color de fondo del formulario */
+  padding: 30px; /* Relleno interior del formulario */
+  margin: auto; /* Centra el formulario horizontalmente */
+  margin-top: 100px; /* Margen superior del formulario */
+  border-radius: 4px; /* Borde redondeado */
+  color: white; /* Color del texto dentro del formulario */
+  box-shadow: 7px 13px 37px #000; /* Sombra del formulario */
+}
+
+/* Estilos para el título del formulario */
+.form-register h4 {
+  font-size: 22px; /* Tamaño de fuente del título */
+  margin-bottom: 20px; /* Margen inferior del título */
+}
+
+/* Estilos para los campos de entrada del formulario */
+.controls {
+  width: 100%; /* Ancho completo */
+  background: #24303c; /* Color de fondo de los campos de entrada */
+  padding: 10px; /* Relleno interior de los campos de entrada */
+  border-radius: 4px; /* Borde redondeado */
+  margin-bottom: 16px; /* Margen inferior entre los campos */
+  border: 1px solid #1f53c5; /* Borde de los campos de entrada */
+  color: white; /* Color del texto en los campos de entrada */
+}
+
+/* Estilos para los párrafos dentro del formulario */
+.form-register p {
+  height: 40px; /* Altura de los párrafos */
+  text-align: center; /* Alineación del texto al centro */
+  font-size: 14px; /* Tamaño de fuente de los párrafos */
+  line-height: 40px; /* Altura de línea de los párrafos */
+}
+
+/* Estilos para los enlaces dentro del formulario */
+.form-register a {
+  color: white; /* Color de los enlaces */
+  text-decoration: none; /* Sin decoración de texto para los enlaces */
+}
+
+/* Estilos para los enlaces cuando se pasa el mouse por encima */
+.form-register a:hover {
+  color: white; /* Cambia el color de los enlaces al pasar el mouse */
+  text-decoration: underline; /* Subraya los enlaces al pasar el mouse */
+}
+
+/* Estilos para el botón de registro */
+.form-register .botons {
+  width: 100%; /* Ancho completo del botón */
+  background: #1f53c5; /* Color de fondo del botón */
+  border: none; /* Sin borde para el botón */
+  padding: 12px; /* Relleno interior del botón */
+  color: white; /* Color del texto del botón */
+  margin: 16px 0; /* Margen superior e inferior del botón */
+  font-size: 16px; /* Tamaño de fuente del botón */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+  font-weight: 600; /* Grosor de fuente del botón */
+  transition: 0.2s ease; /* Transición suave para el botón */
+}
+
+/* Estilos para el checkbox */
+.form-register #checkbox {
+  cursor: pointer; /* Cambia el cursor al pasar por encima del checkbox */
+}
+
+/* Estilos para hacer el formulario responsive en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .form-register {
+    width: 80%; /* Reduce el ancho del formulario */
+    margin: 0 auto; /* Centra el formulario en la pantalla */
+  }
+
+  .controls {
+    width: 100%; /* Estira los campos de entrada al 100% del ancho */
+    margin-bottom: 10px; /* Agrega un espacio entre los campos */
+  }
+
+  .botons {
+    width: 100%; /* Estira el botón al 100% del ancho */
+  }
+}

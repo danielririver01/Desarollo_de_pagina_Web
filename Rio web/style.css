@@ -1,0 +1,187 @@
+/* Importa la fuente "Roboto" desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* Estilos generales para todos los elementos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; /* Establece la fuente predeterminada para toda la página */
+}
+
+/* Estilos para elementos con la clase "flex" */
+.flex {
+  display: flex; /* Hace que los elementos con esta clase sean elementos flexibles */
+  align-items: center; /* Alinea los elementos verticalmente en el centro */
+}
+
+/* Estilos para el contenedor principal */
+.container {
+  padding: 0 15px; /* Agrega relleno en los lados del contenedor */
+  min-height: 100vh; /* Establece la altura mínima del contenedor al 100% de la altura de la ventana */
+  justify-content: center; /* Alinea el contenido horizontalmente en el centro */
+  background-image: url(../IMG/gamer\ top\ login.png); /* Establece una imagen de fondo */
+}
+
+/* Estilos para elementos con la clase "riosucio-page" */
+.riosucio-page {
+  justify-content: space-between; /* Distribuye el espacio entre los elementos secundarios */
+  max-width: 1000px; /* Establece el ancho máximo del elemento al 1000px */
+  width: 100%; /* Establece el ancho al 100% del contenedor principal */
+}
+
+/* Estilos para el contenido de texto en ".riosucio-page" */
+.riosucio-page .text {
+  margin-bottom: 90px; /* Margen inferior para el contenido de texto */
+}
+
+/* Estilos para el título en ".riosucio-page" */
+.riosucio-page h1 {
+  color:  white; /* Color del texto */
+  font-size: 4rem; /* Tamaño de fuente */
+  margin-bottom: 10px; /* Margen inferior */
+}
+
+/* Estilos para los párrafos en ".riosucio-page" */
+.riosucio-page p {
+  font-size: 1.75rem; /* Tamaño de fuente */
+  white-space: nowrap; /* No permite saltos de línea en el texto */
+  color: #fff; /* Color del texto */
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  background: #fff; /* Color de fondo */
+  border-radius: 8px; /* Borde redondeado */
+  padding: 20px; /* Relleno interior */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra */
+  max-width: 400px; /* Ancho máximo */
+  width: 100%; /* Ancho completo */
+}
+
+/* Estilos para los campos de entrada en el formulario */
+form input {
+  height: 55px; /* Altura de campo de entrada */
+  width: 100%; /* Ancho completo */
+  border: 1px solid #ccc; /* Borde */
+  border-radius: 6px; /* Borde redondeado */
+  margin-bottom: 15px; /* Margen inferior */
+  font-size: 1rem; /* Tamaño de fuente */
+  padding: 0 14px; /* Relleno interior */
+}
+
+/* Estilos para los campos de entrada cuando tienen el foco */
+form input:focus {
+  outline: none; /* Quita el contorno al enfocar */
+  border-color: #1877f2; /* Cambia el color del borde al enfocar */
+}
+
+/* Estilos para el marcador de posición en los campos de entrada */
+::placeholder {
+  color: #777; /* Color del marcador de posición */
+  font-size: 1.063rem; /* Tamaño de fuente del marcador de posición */
+}
+
+/* Estilos para la sección de enlaces */
+.link {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 15px; /* Espacio entre elementos hijos */
+}
+
+/* Estilos para el botón de inicio de sesión en la sección de enlaces */
+.link .login {
+  border: none; /* Sin borde */
+  outline: none; /* Sin contorno al enfocar */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  background: rgba(192, 192, 192, 1); /* Color de fondo del botón */
+  padding: 15px 0; /* Relleno interior del botón */
+  border-radius: 6px; /* Borde redondeado */
+  color: #fff; /* Color del texto */
+  font-size: 1.25rem; /* Tamaño de fuente */
+  font-weight: 600; /* Grosor de fuente */
+  transition: 0.2s ease; /* Transición suave */
+}
+
+/* Estilos para el botón de inicio de sesión al pasar el mouse por encima */
+.link .login:hover {
+  background: rgba(192, 192, 192, 1); /* Cambia el color de fondo */
+}
+
+/* Estilos para los enlaces en el formulario */
+form a {
+  text-decoration: none; /* Sin decoración de texto */
+}
+
+/* Estilos para el enlace "olvidaste mi contraseña?" */
+.link .forgot {
+  color: #1877f2; /* Color del texto */
+  font-size: 0.875rem; /* Tamaño de fuente */
+}
+
+/* Estilos para el enlace "olvidaste mi contraseña?" al pasar el mouse por encima */
+.link .forgot:hover {
+  text-decoration: underline; /* Subraya el enlace al pasar el mouse por encima */
+}
+
+/* Estilos para la línea horizontal */
+hr {
+  border: none; /* Sin borde */
+  height: 1px; /* Altura de la línea */
+  background-color: #ccc; /* Color de fondo de la línea */
+  margin-bottom: 20px; /* Margen inferior */
+  margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos para la sección de botones */
+.button {
+  margin-top: 25px; /* Margen superior */
+  text-align: center; /* Alineación de texto al centro */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para el enlace "Crear un nuevo usuario" en la sección de botones */
+.button a {
+  padding: 15px 20px; /* Relleno interior del enlace */
+  background:  #2633a6; /* Color de fondo */
+  border-radius: 6px; /* Borde redondeado */
+  color: #fff; /* Color del texto */
+  font-size: 1.063rem; /* Tamaño de fuente */
+  font-weight: 600; /* Grosor de fuente */
+  transition: 0.2s ease; /* Transición suave */
+}
+
+/* Estilos para el enlace "Crear un nuevo usuario" al pasar el mouse por encima */
+.button a:hover {
+  background: rgba(0, 0, 255, 1); /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
+/* Estilos para tamaños de pantalla pequeños (hasta 900px) */
+@media (max-width: 900px) {
+  .riosucio-page {
+    flex-direction: column; /* Cambia la dirección de los elementos flexibles a columna */
+    text-align: center; /* Alinea el texto al centro */
+  }
+
+  .riosucio-page .text {
+    margin-bottom: 30px; /* Margen inferior para el contenido de texto */
+  }
+}
+
+/* Estilos para tamaños de pantalla muy pequeños (hasta 460px) */
+@media (max-width: 460px) {
+  .riosucio-page h1 {
+    font-size: 3.5rem; /* Reduce el tamaño del título */
+  }
+
+  .riosucio-page p {
+    font-size: 1.3rem; /* Reduce el tamaño de los párrafos */
+  }
+
+  form {
+    padding: 15px; /* Reduce el relleno interior del formulario */
+  }
+}
